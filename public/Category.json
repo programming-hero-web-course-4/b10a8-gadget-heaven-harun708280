@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "category": "Smartphones",
+      "slug": "smartphones"
+    },
+    {
+      "id": 2,
+      "category": "Tablets",
+      "slug": "tablets"
+    },
+    {
+      "id": 3,
+      "category": "Audio",
+      "slug": "audio"
+    },
+    {
+      "id": 4,
+      "category": "Wearables",
+      "slug": "wearables"
+    },
+    {
+      "id": 5,
+      "category": "Laptops",
+      "slug": "laptops"
+    },
+    {
+      "id": 6,
+      "category": "Home Entertainment",
+      "slug": "home-entertainment"
+    },
+    {
+      "id": 7,
+      "category": "Accessories",
+      "slug": "accessories"
+    }
+  ]
+  

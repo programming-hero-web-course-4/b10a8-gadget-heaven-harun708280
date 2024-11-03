@@ -5,6 +5,7 @@ import {
 import LayOut from "../Layout/LayOut";
 import Home from "../Component/Home/Home";
 import Product from "../Component/Product/Product";
+import ProductDetails from "../Component/ProductDetails/ProductDetails";
 
   const router = createBrowserRouter([
     {
@@ -29,7 +30,9 @@ import Product from "../Component/Product/Product";
             ]
         },
         {
-            
+            path:'/productDetails/:name',
+            element:<ProductDetails></ProductDetails>,
+            loader:()=>fetch(`../product.json`),
         }
       ]
     },

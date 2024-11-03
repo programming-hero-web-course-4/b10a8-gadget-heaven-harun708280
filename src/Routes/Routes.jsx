@@ -27,6 +27,9 @@ import Product from "../Component/Product/Product";
                     loader:()=>fetch(`../product.json`),
                 }
             ]
+        },
+        {
+            
         }
       ]
     },

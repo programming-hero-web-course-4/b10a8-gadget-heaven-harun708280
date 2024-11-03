@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import Card from './Card';
 
 const Product = () => {
     const loadProduct=useLoaderData()
@@ -18,8 +19,10 @@ const Product = () => {
     },[loadProduct])
     
     return (
-        <div>
-            <h1>Product.{products.length}</h1>
+        <div className='grid grid-cols-3 gap-5'>
+            {
+                products.map(product=><Card key={product.id} product={product} ></Card>)
+            }
         </div>
     );
 };

@@ -17,7 +17,7 @@ const Home = () => {
                 <div className="w-2/12">
                 <Category key={loadCategory.id} category={loadCategory}></Category>
                 </div>
-                <div className="">
+                <div className="w-10/12">
                     <Outlet></Outlet>
                 </div>
             </div>

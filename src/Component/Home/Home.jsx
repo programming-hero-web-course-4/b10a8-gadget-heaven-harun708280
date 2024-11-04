@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Banner from './Banner';
 import Category from '../../Category/Category';
 import { Outlet, useLoaderData } from 'react-router-dom';
+import { cardContext } from '../../Layout/LayOut';
 
 const Home = () => {
     const loadCategory=useLoaderData()
+    
+    
+    
     
     
     return (

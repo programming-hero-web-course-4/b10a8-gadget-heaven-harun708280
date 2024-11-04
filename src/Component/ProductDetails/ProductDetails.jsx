@@ -1,31 +1,68 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
+import { cardContext } from '../../Layout/LayOut';
+import { toast } from 'react-toastify';
 
 const ProductDetails = () => {
     const { name } = useParams();
     const loadProduct = useLoaderData();
     const [product, setProduct] = useState(null); 
-
+    const [card,setCard]=useContext(cardContext)
+    
+    
     useEffect(() => {
         const filterData = loadProduct.find(product => product.title === name);
         setProduct(filterData);
     }, [loadProduct, name]);
 
+    const handleCardAdd=(item)=>{
+        const newCard=[...card,item]
+        
+        
+        const findData=card.find(card=>card===item)
+        if (availability) {
+            if (!findData) {
+                setCard(newCard)
+                toast.success('successfully Added Card',{
+                    position:'top-center'
+                })
+            }
+            else{
+                toast.error('sorry This product already added',{
+                    position:'top-center'
+                })
+            }
+        }else{
+            toast.error('Sorry This product Stock Out',{
+                position:'top-center'
+            })
+        }
+        
+        
+        
+        
+
+    }
+   
+    
+
    if (!product) {
-    return <div className=""><span><span className="loading loading-bars loading-lg"></span></span></div>
+    return <div className="text-center"><span><span className="loading loading-bars loading-lg"></span></span></div>
     
     
    }
     
     const { rating, availability, Specification, description, price, category, product_image, title } = product;
+    console.log(product,'product log');
+    
     const reactRating={
         size: 30,
         value: rating,
         edit: false,
         isHalf:true,
       };
-
+      
     return (
         <div className="mb-12 relative ">
             <div className='bg-common'>
@@ -50,12 +87,14 @@ const ProductDetails = () => {
                             }
                         </div>
                         <p className='text-[#09080F99]'>{description}</p>
-                        <div>
+                         <div>
                             <h1>Specification:</h1>
-                            {
-                                Specification && Specification.map((spi, index=1) => <h1 className='text-[#09080F99]' key={index}> ({index+1}) {spi}</h1>)
+                                    {
+                                Specification && Specification.map((spi, index) => 
+                                    <h1 className='text-[#09080F99]' key={index}> ({index + 1}) {spi}</h1>
+                                )
                             }
-                        </div>
+                        </div> 
                         <div className="">
                             <h1>Rating <span><i class="fa-solid fa-square"></i></span></h1>
                             <div className="flex items-center space-x-10">
@@ -63,7 +102,10 @@ const ProductDetails = () => {
                             </div>
                         </div>
                         <div className="flex space-x-14">
-                            <button className='space-x-4 bg-common px-4 text-white rounded-full'><span>Add To Card</span> <span><i class="fa-solid fa-cart-arrow-down"></i></span> </button>
+
+                            <button onClick={()=>handleCardAdd(product)} className='space-x-4 bg-common px-4 text-white rounded-full'><span>Add To Card</span> <span><i class="fa-solid fa-cart-arrow-down"></i></span> </button>
+
+
                             <button className='h-10 w-10 bg-gray-100 rounded-full flex items-center justify-center'><span><i class="fa-regular fa-heart"></i></span></button>
                         </div>
                     </div>

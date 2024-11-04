@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
+import { cardContext } from '../../Layout/LayOut';
 
 const Nav = () => {
     const {pathname}=useLocation()
+    
     return (
         <div className='w-11/12 mx-auto  '>
             {
@@ -43,7 +45,8 @@ const Nav = () => {
                     <ul className="menu menu-horizontal space-x-12 text-white px-1">
                         <NavLink>Home</NavLink>
                         <NavLink>Statistics</NavLink>
-                        <NavLink>Dashboard</NavLink>
+                        <NavLink to='/dashboard'>Dashboard</NavLink>
+
 
                     
                     </ul>
@@ -93,8 +96,8 @@ const Nav = () => {
                 <div className="navbar-center  hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-12  px-1">
                         <NavLink>Home</NavLink>
-                        <NavLink>Statistics</NavLink>
-                        <NavLink>Dashboard</NavLink>
+                        <NavLink>Statistics </NavLink>
+                        <NavLink to='/dashboard'>Dashboard</NavLink>
 
                     
                     </ul>

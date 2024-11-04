@@ -7,7 +7,7 @@ const Card = ({product}) => {
         <div>
             <div className="card card-compact bg-[#FFFFFF]  shadow-xl">
             <figure>
-                <img className='h-52 w-full  rounded-lg'
+                <img className='h-52 w-full  rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-125'
                 src={product_image}
                 alt="Shoes" />
             </figure>

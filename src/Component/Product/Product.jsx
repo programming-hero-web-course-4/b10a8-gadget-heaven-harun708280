@@ -3,6 +3,10 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import Card from './Card';
 
 const Product = () => {
+    useEffect (()=>{
+        document.title='Gadget Heaven || product'
+
+    },[])
     const loadProduct=useLoaderData()
     const {name}=useParams()
     

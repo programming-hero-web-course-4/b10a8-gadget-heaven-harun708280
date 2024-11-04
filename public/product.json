@@ -4,7 +4,7 @@
       "title": "Smartphone X12",
       "product_image": "https://aio.lv/img/cache/product/10740646/59904306_extra_large.webp",
       "category": "Smartphones",
-      "price": 799.99,
+      "price": 799,
       "description": "High-performance smartphone with stunning display and long-lasting battery.",
       "Specification": [
         "6.5-inch OLED display",
@@ -21,7 +21,7 @@
       "title": "Tablet Pro 10",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/3430-82582.jpg",
       "category": "Tablets",
-      "price": 499.99,
+      "price": 499,
       "description": "Lightweight tablet with high-resolution display and powerful processor.",
       "Specification": [
         "10.1-inch Retina display",
@@ -38,7 +38,7 @@
       "title": "Wireless Earbuds A20",
       "product_image": "https://media.extra.com/i/aurora/100322041_100_02?fmt=auto&w=720",
       "category": "Audio",
-      "price": 149.99,
+      "price": 149,
       "description": "True wireless earbuds with noise cancellation and superior sound quality.",
       "Specification": [
         "Bluetooth 5.2",
@@ -72,7 +72,7 @@
       "title": "Gaming Laptop GX700",
       "product_image": "https://cdn.wccftech.com/wp-content/uploads/2015/10/ASUS-ROG-GX700_13.jpg",
       "category": "Laptops",
-      "price": 1399.99,
+      "price": 1399,
       "description": "High-performance gaming laptop with powerful graphics and fast refresh rate.",
       "Specification": [
         "17.3-inch FHD display, 144Hz",
@@ -89,7 +89,7 @@
       "title": "4K Ultra HD Smart TV",
       "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Y-SqujudcuwU0bcKeQ9QxCWOUh_3poxQow&s",
       "category": "Home Entertainment",
-      "price": 899.99,
+      "price": 899,
       "description": "Ultra HD smart TV with vivid colors and seamless streaming capabilities.",
       "Specification": [
         "55-inch 4K UHD display",
@@ -106,7 +106,7 @@
       "title": "Portable Bluetooth Speaker",
       "product_image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Speaker/JBL/Boombox%203/jbl-boombox3-dhaka-bangladesh-800x800.png",
       "category": "Audio",
-      "price": 59.99,
+      "price": 59,
       "description": "Compact, waterproof Bluetooth speaker with deep bass and clear sound.",
       "Specification": [
         "IP67 waterproof",
@@ -123,7 +123,7 @@
       "title": "Ultrabook Z500",
       "product_image": "https://images-eu.ssl-images-amazon.com/images/I/51rcFQK1w5L._AC_UL600_SR600,600_.jpg",
       "category": "Laptops",
-      "price": 1099.99,
+      "price": 1099,
       "description": "Sleek ultrabook with powerful processing and long battery life.",
       "Specification": [
         "13.3-inch Retina display",
@@ -140,7 +140,7 @@
       "title": "Smart Home Assistant",
       "product_image": "https://www.zdnet.com/a/img/resize/c0c7c91ed82cea9bc6b2daf0bacd49f3e5f70a51/2023/04/14/de48df2a-d683-42c7-9a42-a63f204bc99b/google-home.jpg?auto=webp&fit=crop&height=900&width=1200",
       "category": "Home Entertainment",
-      "price": 89.99,
+      "price": 89,
       "description": "Voice-controlled smart home assistant with speaker and smart home integration.",
       "Specification": [
         "Voice assistant",
@@ -157,7 +157,7 @@
       "title": "Noise-Cancelling Headphones",
       "product_image": "https://sonysmart.com.bd/public/uploads/all/q5gy2RSoRIwRmFPLELLX2bu5e3XUCBPH8DtxjVGN.jpg",
       "category": "Audio",
-      "price": 299.99,
+      "price": 299,
       "description": "Over-ear headphones with advanced noise-canceling technology and premium sound.",
       "Specification": [
         "Bluetooth 5.1",
@@ -174,7 +174,7 @@
       "title": "Smartphone G6 Lite",
       "product_image": "https://www.notebookcheck.net/fileadmin/_processed_/5/9/csm_LG_G6_1920_b3683c716b.jpg",
       "category": "Smartphones",
-      "price": 399.99,
+      "price": 399,
       "description": "Affordable smartphone with a vibrant display and powerful battery.",
       "Specification": [
         "6.3-inch HD+ display",
@@ -190,7 +190,7 @@
       "title": "Gaming Console Z-Box",
       "product_image": "https://www.zotac.com/download/files/styles/w787/public/zgc-g1a1w-01-image01.jpg?itok=uOyLr2qj",
       "category": "Home Entertainment",
-      "price": 499.99,
+      "price": 499,
       "description": "Next-gen gaming console with ultra-fast loading and immersive graphics.",
       "Specification": [
         "8-core processor",
@@ -207,7 +207,7 @@
       "title": "Fitness Smart Band",
       "product_image": "https://www.transtekcorp.com/uploads/image/20211103/10/waterproof-best-fitness-tracker-watch-band-3s-transtek-detail-1.jpg",
       "category": "Wearables",
-      "price": 49.99,
+      "price": 55,
       "description": "Lightweight fitness band with step counting and heart rate monitoring.",
       "Specification": [
         "Heart rate monitor",
@@ -223,7 +223,7 @@
       "title": "Convertible Laptop 2-in-1",
       "product_image": "https://asestechbd.com/wp-content/uploads/2023/03/14-EK0033DX.jpg",
       "category": "Laptops",
-      "price": 1299.99,
+      "price": 1299,
       "description": "Versatile 2-in-1 laptop with touchscreen and powerful performance.",
       "Specification": [
         "14-inch FHD touchscreen",
@@ -239,7 +239,7 @@
       "title": "Smartphone Max Pro",
       "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(5)-1544.jpg",
       "category": "Smartphones",
-      "price": 999.99,
+      "price": 999,
       "description": "Flagship smartphone with advanced camera system and large storage.",
       "Specification": [
         "6.7-inch QHD+ display",
@@ -256,7 +256,7 @@
       "title": "Smartwatch Fit",
       "product_image": "https://ryans.com/storage/products/main/huawei-watch-fit-3-amoled-display-gold-white-11722151250.webp",
       "category": "Wearables",
-      "price": 199.99,
+      "price": 199,
       "description": "Stylish smartwatch with fitness tracking and notifications.",
       "Specification": [
         "1.4-inch display",
@@ -272,7 +272,7 @@
       "title": "VR Headset Pro",
       "product_image": "https://www.startech.com.bd/image/cache/catalog/vr-set/meta/quest-pro/quest-pro-04-500x500.webp",
       "category": "Home Entertainment",
-      "price": 349.99,
+      "price": 349,
       "description": "Immersive virtual reality headset with a wide field of view and high resolution.",
       "Specification": [
         "Dual OLED displays",
@@ -289,7 +289,7 @@
       "title": "Smart Projector Mini",
       "product_image": "https://www.pchouse.com.bd/image/cache/catalog/mistake%20product/107/aun%20projector%20pchouse%20bd-600x500h.jpg.webp",
       "category": "Home Entertainment",
-      "price": 299.99,
+      "price": 299,
       "description": "Compact smart projector for home entertainment with Wi-Fi connectivity.",
       "Specification": [
         "1080p resolution",
@@ -305,7 +305,7 @@
       "title": "Smart Doorbell Camera",
       "product_image": "https://cdn.thewirecutter.com/wp-content/media/2023/09/smart-doorbell-camera-2048px-0033.jpg",
       "category": "Home Entertainment",
-      "price": 199.99,
+      "price": 199,
       "description": "Smart doorbell camera with HD video and two-way audio.",
       "Specification": [
         "HD video resolution",
@@ -321,7 +321,7 @@
       "title": "Wireless Charging Pad",
       "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18j-uDXHhFI8-MUnU8kKYCgsScR6NDtYHFw&s",
       "category": "Accessories",
-      "price": 29.99,
+      "price": 65,
       "description": "Fast wireless charging pad compatible with all Qi-enabled devices.",
       "Specification": [
         "10W fast charging",
@@ -337,7 +337,7 @@
       "title": "Bluetooth Tracking Tag",
       "product_image": "https://shop.letstrack.in/cdn/shop/products/1_d708782c-2143-448e-922c-b51b3bee9fcd.jpg?v=1691565342&width=1080",
       "category": "Accessories",
-      "price": 24.99,
+      "price": 60,
       "description": "Bluetooth tracking tag to help you locate your belongings.",
       "Specification": [
         "Range up to 200 feet",

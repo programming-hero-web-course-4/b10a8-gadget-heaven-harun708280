@@ -5,6 +5,9 @@ import { cardContext, walletContext, wishListContext } from '../../Layout/LayOut
 import { toast } from 'react-toastify';
 
 const ProductDetails = () => {
+    useEffect(()=>{
+        document.title='Gadget Heaven || Details'
+    },[])
     const { name } = useParams();
     const loadProduct = useLoaderData();
     const [wallet,setWallet]=useContext(walletContext)

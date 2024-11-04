@@ -7,6 +7,8 @@ import Home from "../Component/Home/Home";
 import Product from "../Component/Product/Product";
 import ProductDetails from "../Component/ProductDetails/ProductDetails";
 import Dashboard from "../Component/Dashboard/Dashboard";
+import Statistics from "../Component/Statistics/Statistics";
+import About from "../Component/About/About";
 
   const router = createBrowserRouter([
     {
@@ -41,6 +43,16 @@ import Dashboard from "../Component/Dashboard/Dashboard";
           path:'/dashboard',
           element:<Dashboard></Dashboard>
 
+        },
+        {
+          path:'/Statistics',
+          element:<Statistics></Statistics>,
+          loader:()=>fetch(`../product.json`)
+        },
+        {
+          path:'/about',
+          element:<About></About>,
+          loader:()=>fetch(`Store.json`)
         }
       ]
     },

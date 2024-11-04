@@ -46,8 +46,9 @@ const Nav = () => {
                 </div>
                 <div className="navbar-center  hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-12 text-white px-1">
-                        <NavLink>Home</NavLink>
-                        <NavLink>Statistics</NavLink>
+                        <NavLink to='/'>Home</NavLink>
+                        <NavLink to='/about'>About</NavLink>
+                        <NavLink to='Statistics'>Statistics</NavLink>
                         <NavLink to='/dashboard'>Dashboard</NavLink>
 
 
@@ -105,8 +106,9 @@ const Nav = () => {
                 </div>
                 <div className="navbar-center  hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-12  px-1">
-                        <NavLink>Home</NavLink>
-                        <NavLink>Statistics </NavLink>
+                        <NavLink to='/'>Home</NavLink>
+                        <NavLink to='/about'>About</NavLink>
+                        <NavLink to='Statistics'>Statistics </NavLink>
                         <NavLink to='/dashboard'>Dashboard</NavLink>
 
                     

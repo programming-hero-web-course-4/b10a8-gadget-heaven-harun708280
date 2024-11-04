@@ -1,4 +1,8 @@
-[
+    [{
+      "id": 6,
+      "category": "Home Entertainment",
+      "slug": "home-entertainment"
+    },
     {
       "id": 1,
       "category": "Smartphones",
@@ -24,11 +28,7 @@
       "category": "Laptops",
       "slug": "laptops"
     },
-    {
-      "id": 6,
-      "category": "Home Entertainment",
-      "slug": "home-entertainment"
-    },
+    
     {
       "id": 7,
       "category": "Accessories",

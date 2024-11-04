@@ -1,12 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
-import { cardContext } from '../../Layout/LayOut';
+import { cardContext, walletContext } from '../../Layout/LayOut';
 import { toast } from 'react-toastify';
 
 const ProductDetails = () => {
     const { name } = useParams();
     const loadProduct = useLoaderData();
+    const [wallet,setWallet]=useContext(walletContext)
     const [product, setProduct] = useState(null); 
     const [card,setCard]=useContext(cardContext)
     
@@ -20,10 +21,13 @@ const ProductDetails = () => {
         const newCard=[...card,item]
         
         
+        
+        
         const findData=card.find(card=>card===item)
         if (availability) {
             if (!findData) {
                 setCard(newCard)
+                setWallet(wallet+item.price)
                 toast.success('successfully Added Card',{
                     position:'top-center'
                 })
@@ -44,6 +48,8 @@ const ProductDetails = () => {
         
 
     }
+    console.log(wallet,'walltet');
+    
    
     
 

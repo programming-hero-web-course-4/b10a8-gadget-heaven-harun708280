@@ -5,22 +5,25 @@ import Footer from '../Component/Common/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
-export const cardContext = createContext();
-
+export const cardContext = createContext(null);
+export const walletContext=createContext(null)
 const LayOut = () => {
     const [card, setCard] = useState([]);
+    const [wallet,setWallet]=useState(0)
     return (
-        <cardContext.Provider value={[card, setCard]}>
+        <walletContext.Provider value={[wallet,setWallet]}>
+            <cardContext.Provider value={[card, setCard]}>
 
             <div className=''>
                 <ToastContainer />
                 <Nav />
-                <div className="">
+                <div className="min-h-[calc(100vh-285px)]">
                     <Outlet />
                 </div>
                 <Footer />
             </div>
-        </cardContext.Provider>
+            </cardContext.Provider>
+        </walletContext.Provider>
     );
 };
 

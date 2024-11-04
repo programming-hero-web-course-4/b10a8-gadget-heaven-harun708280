@@ -1,11 +1,12 @@
 import React, { useContext, useState } from 'react';
-import { cardContext, walletContext } from '../../Layout/LayOut';
+import { cardContext, walletContext, wishListContext } from '../../Layout/LayOut';
 import CartDashBoard from './CartDashBoard';
 import WishListDashBoard from './WishListDashBoard';
 
 const Dashboard = () => {
     const [wallet,setWallet]=useContext(walletContext)
     const [card,setCard]=useContext(cardContext)
+    const [wishList,setWishList]=useContext(wishListContext)
     const [dash,setDash]=useState({status:'cart'})
     const handleDashBoard=(status)=>{
        if (status==='cart') {
@@ -24,8 +25,6 @@ const Dashboard = () => {
         
 
     }
-    
-    const totalWallet = typeof wallet === 'number' ? wallet : parseFloat(wallet) || 0;
             
     return (
         <div>
@@ -45,7 +44,7 @@ const Dashboard = () => {
                {
                  dash.status==='cart' && 
                  <div className="flex space-x-10 items-center">
-                 <h1>Total cost: {totalWallet.toFixed(2)}</h1>
+                 <h1>Total cost: {wallet}</h1>
                  <div className="space-x-4">
 
                  <button onClick={handlePriceSort} className='border-common border text-common rounded-full py-1 px-7' type="button">Sort by Price</button>

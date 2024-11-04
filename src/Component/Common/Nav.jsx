@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { cardContext } from '../../Layout/LayOut';
+import { cardContext, wishListContext } from '../../Layout/LayOut';
 
 const Nav = () => {
     const {pathname}=useLocation()
     const [card,setCard] =useContext(cardContext)
     console.log(card,'cardddd');
-    
+    const [wishList,setWishList]=useContext(wishListContext)
     
     return (
         <div className='w-11/12 mx-auto  '>
@@ -61,9 +61,13 @@ const Nav = () => {
                             <span>{card?.length}</span>
                         </div>
                     </div>
-                    <div className="">
-                        <button className='h-10 w-10 bg-white rounded-full'><i class="fa-regular fa-heart"></i></button>
+                    <div className="relative">
+                        <button className='h-10 w-10  bg-white rounded-full'><i class="fa-regular fa-heart"></i></button>
+                        <div className="absolute  -top-1 -right-1">
+                            <span>{wishList?.length}</span>
+                        </div>
                     </div>
+                    
                 </div>
             </div>:
                 <div className="navbar rounded-t-lg  ">
@@ -115,8 +119,11 @@ const Nav = () => {
                             <span>{card?.length}</span>
                         </div>
                     </div>
-                    <div className="">
-                        <button className='h-10 w-10 bg-white rounded-full'><i class="fa-regular fa-heart"></i></button>
+                    <div className="relative">
+                        <button className='h-10 w-10  bg-white rounded-full'><i class="fa-regular fa-heart"></i></button>
+                        <div className="absolute  -top-1 -right-1">
+                            <span>{wishList?.length}</span>
+                        </div>
                     </div>
                 </div>
                 </div>

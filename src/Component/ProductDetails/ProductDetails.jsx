@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
-import { cardContext, walletContext } from '../../Layout/LayOut';
+import { cardContext, walletContext, wishListContext } from '../../Layout/LayOut';
 import { toast } from 'react-toastify';
 
 const ProductDetails = () => {
@@ -11,6 +11,10 @@ const ProductDetails = () => {
     const [product, setProduct] = useState(null); 
     const [card,setCard]=useContext(cardContext)
     const navigate=useNavigate()
+    const [wishList,setWishList]=useContext(wishListContext)
+    console.log(wishList,wishList.length,'washList');
+    
+    
     
     useEffect(() => {
         const filterData = loadProduct.find(product => product.title === name);
@@ -48,8 +52,25 @@ const ProductDetails = () => {
         
 
     }
-    console.log(wallet,'walltet');
     
+    const handleWishlist=item=>{
+        
+        const findData=[...wishList].find(product=>product.id=== item.id)
+        if (!findData) {
+            setWishList([...wishList,item])
+            toast.success('SuccessFully Add WishList',{
+                position:'top-left'
+            })
+        }
+        else{
+            toast.error('This Product Already Added ',{
+                position:'top-left'
+            })
+        }
+        
+    }
+    
+   console.log(wishList,'wishlist');
    
     
 
@@ -113,7 +134,7 @@ const ProductDetails = () => {
                             <button onClick={()=>{handleCardAdd(product),navigate(-1)}} className='space-x-4 bg-common px-4 text-white rounded-full'><span>Add To Card</span> <span><i class="fa-solid fa-cart-arrow-down"></i></span> </button>
 
 
-                            <button className='h-10 w-10 bg-gray-100 rounded-full flex items-center justify-center'><span><i class="fa-regular fa-heart"></i></span></button>
+                            <button onClick={()=>handleWishlist(product)} className='h-10 w-10 bg-rose-500  text-white rounded-full flex items-center justify-center'><span><i class="fa-regular fa-heart"></i></span></button>
                         </div>
                     </div>
                 </div>

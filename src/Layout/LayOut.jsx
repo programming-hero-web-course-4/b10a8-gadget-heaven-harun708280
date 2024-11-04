@@ -6,12 +6,15 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 export const cardContext = createContext(null);
-export const walletContext=createContext(null)
+export const walletContext=createContext(null);
+export const wishListContext=createContext(null)
 const LayOut = () => {
     const [card, setCard] = useState([]);
-    const [wallet,setWallet]=useState(0)
+    const [wallet,setWallet]=useState(0);
+    const [wishList,setWishList]=useState([])
     return (
-        <walletContext.Provider value={[wallet,setWallet]}>
+        <wishListContext.Provider value={[wishList,setWishList]}>
+         <walletContext.Provider value={[wallet,setWallet]}>
             <cardContext.Provider value={[card, setCard]}>
 
             <div className=''>
@@ -23,7 +26,8 @@ const LayOut = () => {
                 <Footer />
             </div>
             </cardContext.Provider>
-        </walletContext.Provider>
+         </walletContext.Provider>
+        </wishListContext.Provider>
     );
 };
 

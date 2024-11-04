@@ -4,6 +4,9 @@ import { cardContext } from '../../Layout/LayOut';
 
 const Nav = () => {
     const {pathname}=useLocation()
+    const [card,setCard] =useContext(cardContext)
+    console.log(card,'cardddd');
+    
     
     return (
         <div className='w-11/12 mx-auto  '>
@@ -52,8 +55,11 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-8 tex">
-                    <div className="">
+                    <div className="relative">
                         <button className='h-10 w-10 bg-white rounded-full'><i class="fa-solid fa-cart-shopping"></i></button>
+                        <div className="absolute  -top-1 -right-1">
+                            <span>{card?.length}</span>
+                        </div>
                     </div>
                     <div className="">
                         <button className='h-10 w-10 bg-white rounded-full'><i class="fa-regular fa-heart"></i></button>
@@ -103,8 +109,11 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-8 tex">
-                    <div className="">
+                <div className="relative">
                         <button className='h-10 w-10 bg-white rounded-full'><i class="fa-solid fa-cart-shopping"></i></button>
+                        <div className="absolute  -top-1 -right-1">
+                            <span>{card?.length}</span>
+                        </div>
                     </div>
                     <div className="">
                         <button className='h-10 w-10 bg-white rounded-full'><i class="fa-regular fa-heart"></i></button>

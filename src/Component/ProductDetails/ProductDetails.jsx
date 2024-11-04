@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
 import { cardContext, walletContext } from '../../Layout/LayOut';
 import { toast } from 'react-toastify';
@@ -10,12 +10,12 @@ const ProductDetails = () => {
     const [wallet,setWallet]=useContext(walletContext)
     const [product, setProduct] = useState(null); 
     const [card,setCard]=useContext(cardContext)
-    
+    const navigate=useNavigate()
     
     useEffect(() => {
         const filterData = loadProduct.find(product => product.title === name);
         setProduct(filterData);
-    }, [loadProduct, name]);
+    }, [loadProduct]);
 
     const handleCardAdd=(item)=>{
         const newCard=[...card,item]
@@ -23,7 +23,7 @@ const ProductDetails = () => {
         
         
         
-        const findData=card.find(card=>card===item)
+        const findData=card.find(card=>card.id===item.id)
         if (availability) {
             if (!findData) {
                 setCard(newCard)
@@ -70,7 +70,8 @@ const ProductDetails = () => {
       };
       
     return (
-        <div className="mb-12 relative ">
+        <div className="">
+            <div className="mb-12 relative  ">
             <div className='bg-common'>
                 <div className="w-7/12 mx-auto text-center pt-12 pb-40">
                     <h1 className='text-4xl font-bold text-white'>Product Details</h1>
@@ -109,7 +110,7 @@ const ProductDetails = () => {
                         </div>
                         <div className="flex space-x-14">
 
-                            <button onClick={()=>handleCardAdd(product)} className='space-x-4 bg-common px-4 text-white rounded-full'><span>Add To Card</span> <span><i class="fa-solid fa-cart-arrow-down"></i></span> </button>
+                            <button onClick={()=>{handleCardAdd(product),navigate(-1)}} className='space-x-4 bg-common px-4 text-white rounded-full'><span>Add To Card</span> <span><i class="fa-solid fa-cart-arrow-down"></i></span> </button>
 
 
                             <button className='h-10 w-10 bg-gray-100 rounded-full flex items-center justify-center'><span><i class="fa-regular fa-heart"></i></span></button>
@@ -117,6 +118,7 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 };

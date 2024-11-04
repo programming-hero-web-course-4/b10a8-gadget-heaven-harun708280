@@ -8,7 +8,7 @@ const CartDashBoard = () => {
    const handleCardRemove=(id,price)=>{
      const filterData=[...card].filter(item=>item.id!==id)
      setCard(filterData)
-     setWallet(wallet-price)
+     setWallet((wallet-price).toFixed(2))
    }
 
     return (

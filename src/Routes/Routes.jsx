@@ -32,7 +32,9 @@ import Dashboard from "../Component/Dashboard/Dashboard";
         },
         {
             path:'/productDetails/:name',
-            element:<ProductDetails></ProductDetails>,
+            element:(<div className="h-[800px]">
+              <ProductDetails></ProductDetails>
+            </div>),
             loader:()=>fetch(`../product.json`),
         },
         {

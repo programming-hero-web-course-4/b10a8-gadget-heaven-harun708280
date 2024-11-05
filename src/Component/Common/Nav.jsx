@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { cardContext, wishListContext } from '../../Layout/LayOut';
 
 const Nav = () => {
@@ -42,21 +42,21 @@ const Nav = () => {
                         <li><a>Item 3</a></li>
                     </ul>
                     </div>
-                    <a className="text-white font-bold text-xl">Gadget Heaven </a>
+                    <Link to='/' className=" text-white  font-bold text-xl">Gadget Heaven  </Link>
                 </div>
                 <div className="navbar-center  hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-12 text-white px-1">
                         <NavLink to='/' className={({isActive})=>[
-                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                            isActive?'border-b-4 border-white ':'hover:border-b-2 hover:border-white'
                         ]} >Home</NavLink>
-                        <NavLink to='/about' className={({isActive})=>[
-                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
-                        ]} >About</NavLink>
-                        <NavLink to='Statistics' className={({isActive})=>[
-                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
-                        ]} >Statistics</NavLink>
-                        <NavLink to='/dashboard' className={({isActive})=>[
-                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        <NavLink to='/about'  className={({isActive})=>[
+                            isActive?'border-b-4 border-white ':'hover:border-b-2 hover:border-white'
+                        ]}  >About</NavLink>
+                        <NavLink to='Statistics'  className={({isActive})=>[
+                            isActive?'border-b-4 border-white ':'hover:border-b-2 hover:border-white'
+                        ]}  >Statistics</NavLink>
+                        <NavLink to='/dashboard'  className={({isActive})=>[
+                            isActive?'border-b-4 border-white ':'hover:border-b-2 hover:border-white'
                         ]} >Dashboard</NavLink>
 
 
@@ -64,14 +64,14 @@ const Nav = () => {
                     </ul>
                 </div>
                 <div className="navbar-end space-x-8 tex">
-                    <div className="relative">
-                        <button className='h-10 w-10 bg-white rounded-full'><i class="fa-solid fa-cart-shopping"></i></button>
+                    <div className="relative text-white">
+                        <button className='h-10 w-10  rounded-full'><i class="fa-solid fa-cart-shopping"></i></button>
                         <div className="absolute  -top-1 -right-1">
                             <span>{card?.length}</span>
                         </div>
                     </div>
-                    <div className="relative">
-                        <button className='h-10 w-10  bg-white rounded-full'><i class="fa-regular fa-heart"></i></button>
+                    <div className="relative text-white">
+                        <button className='h-10 w-10 text-white  rounded-full'><i class="fa-regular fa-heart"></i></button>
                         <div className="absolute  -top-1 -right-1">
                             <span>{wishList?.length}</span>
                         </div>
@@ -96,35 +96,23 @@ const Nav = () => {
                             d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <ul
-                        tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li>
-                        <a>Parent</a>
-                        <ul className="p-2">
-                            <li><a>Submenu 1</a></li>
-                            <li><a>Submenu 2</a></li>
-                        </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
-                    </ul>
+                   
                     </div>
-                    <a className=" font-bold text-xl">Gadget Heaven </a>
+                   <Link to='/' className="  font-bold text-xl">Gadget Heaven  </Link>
                 </div>
                 <div className="navbar-center  hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-12  px-1">
                         <NavLink to='/' className={({isActive})=>[
-                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                            isActive?'border-b-4 border-common':'hover:border-b-2 hover:border-common'
                         ]}>Home</NavLink>
-                        <NavLink to='/about' className={({isActive})=>[
-                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        <NavLink to='/about'className={({isActive})=>[
+                            isActive?'border-b-4 border-common':'hover:border-b-2 hover:border-common'
                         ]}>About</NavLink>
                         <NavLink to='Statistics' className={({isActive})=>[
-                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                            isActive?'border-b-4 border-common':'hover:border-b-2 hover:border-common'
                         ]}>Statistics </NavLink>
-                        <NavLink to='/dashboard' className={({isActive})=>[
-                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        <NavLink to='/dashboard'className={({isActive})=>[
+                            isActive?'border-b-4 border-common':'hover:border-b-2 hover:border-common'
                         ]}>Dashboard</NavLink>
 
                     

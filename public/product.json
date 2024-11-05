@@ -1,38 +1,6 @@
 [
-    {
-      "id": 1,
-      "title": "Smartphone X12",
-      "product_image": "https://aio.lv/img/cache/product/10740646/59904306_extra_large.webp",
-      "category": "Smartphones",
-      "price": 799,
-      "description": "High-performance smartphone with stunning display and long-lasting battery.",
-      "Specification": [
-        "6.5-inch OLED display",
-        "128GB storage",
-        "5G connectivity",
-        "Triple camera system"
-      ],
-      "availability": true,
-      "rating": 4.5,
-      "color_options": ["Black", "Blue", "White"]
-    },
-    {
-      "id": 2,
-      "title": "Tablet Pro 10",
-      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/3430-82582.jpg",
-      "category": "Tablets",
-      "price": 499,
-      "description": "Lightweight tablet with high-resolution display and powerful processor.",
-      "Specification": [
-        "10.1-inch Retina display",
-        "64GB storage",
-        "Quad speakers",
-        "USB-C charging"
-      ],
-      "availability": true,
-      "rating": 4.2,
-      "battery_life": "10 hours"
-    },
+    
+    
     {
       "id": 3,
       "title": "Wireless Earbuds A20",
@@ -46,7 +14,7 @@
         "24-hour battery life with case",
         "Water-resistant"
       ],
-      "availability": false,
+      "availability": true,
       "rating": 4.6,
       "color_options": ["Black", "White"]
     },
@@ -218,22 +186,7 @@
       "availability": true,
       "rating": 4.3
     },
-    {
-      "id": 14,
-      "title": "Convertible Laptop 2-in-1",
-      "product_image": "https://asestechbd.com/wp-content/uploads/2023/03/14-EK0033DX.jpg",
-      "category": "Laptops",
-      "price": 1299,
-      "description": "Versatile 2-in-1 laptop with touchscreen and powerful performance.",
-      "Specification": [
-        "14-inch FHD touchscreen",
-        "256GB SSD",
-        "8GB RAM",
-        "Intel i5 processor"
-      ],
-      "availability": false,
-      "rating": 4.1
-    },
+    
     {
       "id": 15,
       "title": "Smartphone Max Pro",

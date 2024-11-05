@@ -20,7 +20,7 @@ const Product = () => {
     },[loadProduct])
     
     return (
-        <div className="">
+        <div className="pb-12">
             {
                 products.length<1?<h1 className='text-center text-6xl h-[320px] flex justify-center items-center'> Not  Product Found <span><i class="fa-solid fa-ban"></i></span></h1>:
                 <div className='grid grid-cols-3 gap-5'>

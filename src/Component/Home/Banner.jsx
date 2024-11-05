@@ -1,5 +1,6 @@
 import React from 'react';
 import banner from './banner.jpg'
+import { Link } from 'react-router-dom';
 const Banner = () => {
     return (
         <div className="relative ">
@@ -8,8 +9,8 @@ const Banner = () => {
             <h1 className='text-5xl text-white '>
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
             </h1>
-            <p className='text-white text-center mx-auto w-9/12'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-            <button className='bg-white py-2 px-4 rounded-xl'>Shop Now</button>
+            <p className='text-white text-center pb-4 mx-auto w-9/12'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
+            <Link to='/dashboard' className='mt-4'><button className='bg-white py-2 px-4 rounded-xl'>Shop Now</button></Link>
             
 
            </div>

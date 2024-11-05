@@ -9,6 +9,11 @@
       "slug": "smartphones"
     },
     {
+      "id": 5,
+      "category": "Laptops",
+      "slug": "laptops"
+    },
+    {
       "id": 2,
       "category": "Tablets",
       "slug": "tablets"
@@ -23,11 +28,7 @@
       "category": "Wearables",
       "slug": "wearables"
     },
-    {
-      "id": 5,
-      "category": "Laptops",
-      "slug": "laptops"
-    },
+    
     
     {
       "id": 7,

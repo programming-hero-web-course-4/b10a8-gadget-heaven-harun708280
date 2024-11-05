@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
-import { cardContext, walletContext, wishListContext } from '../../Layout/LayOut';
+import { cardContext,  wishListContext } from '../../Layout/LayOut';
 import { toast } from 'react-toastify';
 
 const ProductDetails = () => {
@@ -10,7 +10,7 @@ const ProductDetails = () => {
     },[])
     const { name } = useParams();
     const loadProduct = useLoaderData();
-    const [wallet,setWallet]=useContext(walletContext)
+    
     const [product, setProduct] = useState(null); 
     const [card,setCard]=useContext(cardContext)
     const navigate=useNavigate()
@@ -25,16 +25,12 @@ const ProductDetails = () => {
     }, [loadProduct]);
 
     const handleCardAdd=(item)=>{
-        const newCard=[...card,item]
-        
-        
-        
-        
+        const newCard=[...card,item]        
         const findData=card.find(card=>card.id===item.id)
         if (availability) {
             if (!findData) {
                 setCard(newCard)
-                setWallet(wallet+item.price)
+                
                 toast.success('successfully Added Card',{
                     position:'top-center'
                 })
@@ -55,12 +51,15 @@ const ProductDetails = () => {
         
 
     }
+
+    const [active,setActive]=useState(false)
     
     const handleWishlist=item=>{
         
         const findData=[...wishList].find(product=>product.id=== item.id)
         if (!findData) {
             setWishList([...wishList,item])
+            setActive(true)
             toast.success('SuccessFully Add WishList',{
                 position:'top-left'
             })
@@ -137,7 +136,7 @@ const ProductDetails = () => {
                             <button onClick={()=>{handleCardAdd(product),navigate(-1)}} className='space-x-4 bg-common px-4 text-white rounded-full'><span>Add To Card</span> <span><i class="fa-solid fa-cart-arrow-down"></i></span> </button>
 
 
-                            <button onClick={()=>handleWishlist(product)} className='h-10 w-10 bg-rose-500  text-white rounded-full flex items-center justify-center'><span><i class="fa-regular fa-heart"></i></span></button>
+                            <button  disabled={active}  onClick={()=>handleWishlist(product)} className={`h-10 w-10 ${active ? 'bg-gray-400' : 'bg-rose-500'} text-white rounded-full flex items-center justify-center`}><span><i class="fa-regular fa-heart"></i></span></button>
                         </div>
                     </div>
                 </div>

@@ -6,29 +6,29 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 export const cardContext = createContext(null);
-export const walletContext=createContext(null);
+
 export const wishListContext=createContext(null)
 import { Audio } from 'react-loader-spinner'
 const LayOut = () => {
     const [card, setCard] = useState([]);
-    const [wallet,setWallet]=useState(0);
+    
     const [wishList,setWishList]=useState([])
     const navigation=useNavigation()
     return (
         <wishListContext.Provider value={[wishList,setWishList]}>
-         <walletContext.Provider value={[wallet,setWallet]}>
+        
             <cardContext.Provider value={[card, setCard]}>
 
             <div className=''>
                 <ToastContainer />
                 <Nav />
-                <div className="min-h-[calc(100vh-285px)]">
+                <div className="min-h-[calc(100vh-285px)] bg-gray-100">
                     <Outlet />
                 </div>
                 <Footer />
             </div>
             </cardContext.Provider>
-         </walletContext.Provider>
+         
         </wishListContext.Provider>
     );
 };

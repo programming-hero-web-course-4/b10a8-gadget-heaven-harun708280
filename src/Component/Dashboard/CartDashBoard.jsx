@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
-import { cardContext, walletContext } from '../../Layout/LayOut';
+import { cardContext,  } from '../../Layout/LayOut';
 
 const CartDashBoard = () => {
     const [card,setCard]=useContext(cardContext)
-    const [wallet,setWallet]=useContext(walletContext)
+    
     console.log(card,'final card');
-   const handleCardRemove=(id,price)=>{
+   const handleCardRemove=(id)=>{
      const filterData=[...card].filter(item=>item.id!==id)
      setCard(filterData)
-     setWallet((wallet-price).toFixed(2))
+     
    }
 
     return (
@@ -33,7 +33,7 @@ const CartDashBoard = () => {
                 </div>
 
                 
-                <div onClick={()=>handleCardRemove(cardItem.id,cardItem.price)} className=" text-red-500 cursor-pointer hover:text-red-700 text-2xl">
+                <div onClick={()=>handleCardRemove(cardItem.id)} className=" text-red-500 cursor-pointer hover:text-red-700 text-2xl">
                     <span><i className="fa-regular fa-circle-xmark"></i></span>
                 </div>
             </div>

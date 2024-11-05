@@ -39,8 +39,8 @@ const Statistics = () => {
                     </p>
                 </div>
             </div>
-            <div className="flex justify-center">
-                <ResponsiveContainer  height={500}>
+            <div className="flex w-11/12 mx-auto py-12 justify-center">
+                <ResponsiveContainer   height={500}>
                     <ComposedChart
                         data={data}
                         margin={{
@@ -55,7 +55,7 @@ const Statistics = () => {
                         <YAxis />
                         <Tooltip />
                         <Legend />
-                        <Area type="monotone" dataKey="price" fill="#8884d8" stroke="#8884d8" />
+                       
                         <Bar dataKey="price" barSize={20} fill="#413ea0" />
                         <Line type="monotone" dataKey="category" stroke="#ff7300" />
                         <Scatter dataKey="rating" fill="red" />

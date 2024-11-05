@@ -2,8 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import ReactStars from "react-rating-stars-component";
 import { cardContext, wishListContext } from '../../Layout/LayOut';
-import { toast } from 'react-toastify';
-
+import { toast } from 'react-hot-toast';
 const ProductDetails = () => {
     useEffect(() => {
         document.title = 'Gadget Heaven || Details'

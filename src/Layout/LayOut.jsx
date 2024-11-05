@@ -2,8 +2,8 @@ import React, { createContext, useState } from 'react';
 import Nav from '../Component/Common/Nav';
 import { Outlet, useNavigation } from 'react-router-dom';
 import Footer from '../Component/Common/Footer';
-import { ToastContainer, toast } from 'react-toastify';
 
+import { Toaster, toast } from 'react-hot-toast';
 import 'react-toastify/dist/ReactToastify.css';
 export const cardContext = createContext(null);
 
@@ -20,7 +20,8 @@ const LayOut = () => {
             <cardContext.Provider value={[card, setCard]}>
 
             <div className=''>
-                <ToastContainer />
+              
+                <Toaster position="top-right" />
                 <Nav />
                 <div className="min-h-[calc(100vh-285px)] bg-gray-100">
                     <Outlet />

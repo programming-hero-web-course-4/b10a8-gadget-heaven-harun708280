@@ -1,5 +1,6 @@
 ## Live Website Link => (https://gadget-heaven-by-harun.netlify.app/)
 
+## Requirement Document Link => (https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08-.pdf)
 
 # React Fundamental Concepts Used:
 - Functional Components: Building modular and reusable UI components.

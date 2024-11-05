@@ -5,7 +5,7 @@ const MainCategory = ({category}) => {
     
     return (
         <div>
-            <NavLink to={`category/${category.category}`}
+            <NavLink to={`/${category.category}`}
             className={({isActive})=>`rounded-xl px-3 py-2 w-full block ${isActive?'bg-common text-white':'bg-[#09080F0D] hover:bg-common hover:text-white '}`}
             >{category.category}
             </NavLink>

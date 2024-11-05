@@ -21,6 +21,8 @@ const Statistics = () => {
 
     const load = useLoaderData();
 
+    const sortData=load.sort((a,b)=>(a.price-b.price))
+
     
     const data = load.map(item => ({
         name: item.title,

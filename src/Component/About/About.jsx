@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const About = () => {
     const LoadData = useLoaderData();
@@ -87,7 +87,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <h1 className="text-center mt-12 mb-7 text-5xl">Our All Branch</h1>
+            <h1 className="text-center mt-12 mb-7 text-5xl">Our All ValuAble Brand</h1>
             <div className="w-11/12 mx-auto">
                 <Carousel
                     additionalTransfrom={0}
@@ -125,12 +125,14 @@ const About = () => {
                     transitionDuration={2000}
                 >
                     {LoadData?.map((data, index) => (
-                        <WithStyles
-                            key={index}
-                            description={data.location}
-                            headline={data.store_name}
-                            image={data.image}
-                        />
+                        <Link>
+                            <WithStyles
+                                key={index}
+                                description={data.location}
+                                headline={data.store_name}
+                                image={data.image}
+                            />
+                        </Link>
                     ))}
                 </Carousel>
             </div>

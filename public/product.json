@@ -4,7 +4,7 @@
     {
       "id": 3,
       "title": "Wireless Earbuds A20",
-      "product_image": "https://media.extra.com/i/aurora/100322041_100_02?fmt=auto&w=720",
+      "product_image": "https://img.drz.lazcdn.com/static/bd/p/e6b7d2372025bf9ba09356218f465b0b.jpg_960x960q80.jpg_.webp",
       "category": "Audio",
       "price": 149,
       "description": "True wireless earbuds with noise cancellation and superior sound quality.",
@@ -21,7 +21,7 @@
     {
       "id": 4,
       "title": "Smart Watch Series 6",
-      "product_image": "https://istockbd.com/cdn/shop/products/Apple_Watch_Series_6_deep_blue_istockbd.jpg?v=1604045058",
+      "product_image": "https://5.imimg.com/data5/SELLER/Default/2020/9/LA/LE/ST/13502286/1-500x500.jpg",
       "category": "Wearables",
       "price": 299.99,
       "description": "Smartwatch with fitness tracking, heart rate monitoring, and sleep analysis.",
@@ -38,7 +38,7 @@
     {
       "id": 5,
       "title": "Gaming Laptop GX700",
-      "product_image": "https://cdn.wccftech.com/wp-content/uploads/2015/10/ASUS-ROG-GX700_13.jpg",
+      "product_image": "https://www.intogadgets.nl/wp-content/uploads/2016/03/asus-gx700-gaming-laptop-feature.png",
       "category": "Laptops",
       "price": 1399,
       "description": "High-performance gaming laptop with powerful graphics and fast refresh rate.",
@@ -55,8 +55,7 @@
     {
       "id": 6,
       "title": "4K Ultra HD Smart TV",
-      "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Y-SqujudcuwU0bcKeQ9QxCWOUh_3poxQow&s",
-      "category": "Home Entertainment",
+      "product_image": "https://soundmachine.com.mt/wp-content/uploads/2023/05/Samsung-UE55CU7170-55-Crystal-4K-Ultra-HD-Smart-TV-3.jpg",
       "price": 899,
       "description": "Ultra HD smart TV with vivid colors and seamless streaming capabilities.",
       "Specification": [
@@ -72,7 +71,7 @@
     {
       "id": 7,
       "title": "Portable Bluetooth Speaker",
-      "product_image": "https://brotherselectronicsbd.com/image/cache/catalog/demo/Speaker/JBL/Boombox%203/jbl-boombox3-dhaka-bangladesh-800x800.png",
+      "product_image": "https://www.gamingislife.sg/cdn/shop/files/Go4Red.jpg?v=1719228376&width=1214",
       "category": "Audio",
       "price": 59,
       "description": "Compact, waterproof Bluetooth speaker with deep bass and clear sound.",
@@ -89,7 +88,7 @@
     {
       "id": 8,
       "title": "Ultrabook Z500",
-      "product_image": "https://images-eu.ssl-images-amazon.com/images/I/51rcFQK1w5L._AC_UL600_SR600,600_.jpg",
+      "product_image": "https://cdn1.focus.bg/bazar/80/pics/807cd90d23d4472eba22998dbbb65688.jpg",
       "category": "Laptops",
       "price": 1099,
       "description": "Sleek ultrabook with powerful processing and long battery life.",
@@ -106,7 +105,7 @@
     {
       "id": 9,
       "title": "Smart Home Assistant",
-      "product_image": "https://www.zdnet.com/a/img/resize/c0c7c91ed82cea9bc6b2daf0bacd49f3e5f70a51/2023/04/14/de48df2a-d683-42c7-9a42-a63f204bc99b/google-home.jpg?auto=webp&fit=crop&height=900&width=1200",
+      "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6bUMkTgq4I0FLndENr08hbSUOYtPapeP0aA&s",
       "category": "Home Entertainment",
       "price": 89,
       "description": "Voice-controlled smart home assistant with speaker and smart home integration.",
@@ -123,8 +122,8 @@
     {
       "id": 10,
       "title": "Noise-Cancelling Headphones",
-      "product_image": "https://sonysmart.com.bd/public/uploads/all/q5gy2RSoRIwRmFPLELLX2bu5e3XUCBPH8DtxjVGN.jpg",
-      "category": "Audio",
+      "product_image": "https://i.pcmag.com/imagery/articles/06X5FmHnKHTTmFzyn5jMunR-7..v1651759223.jpg",
+      "category": "Home Entertainment",
       "price": 299,
       "description": "Over-ear headphones with advanced noise-canceling technology and premium sound.",
       "Specification": [
@@ -140,7 +139,7 @@
     {
       "id": 11,
       "title": "Smartphone G6 Lite",
-      "product_image": "https://www.notebookcheck.net/fileadmin/_processed_/5/9/csm_LG_G6_1920_b3683c716b.jpg",
+      "product_image": "https://www.notebookcheck.net/fileadmin/_processed_/2/8/csm_intro_35b50302a4.jpg",
       "category": "Smartphones",
       "price": 399,
       "description": "Affordable smartphone with a vibrant display and powerful battery.",
@@ -156,7 +155,7 @@
     {
       "id": 12,
       "title": "Gaming Console Z-Box",
-      "product_image": "https://www.zotac.com/download/files/styles/w787/public/zgc-g1a1w-01-image01.jpg?itok=uOyLr2qj",
+      "product_image": "https://cdn.arstechnica.net/wp-content/uploads/2016/10/DSC00856.jpg",
       "category": "Home Entertainment",
       "price": 499,
       "description": "Next-gen gaming console with ultra-fast loading and immersive graphics.",
@@ -173,7 +172,7 @@
     {
       "id": 13,
       "title": "Fitness Smart Band",
-      "product_image": "https://www.transtekcorp.com/uploads/image/20211103/10/waterproof-best-fitness-tracker-watch-band-3s-transtek-detail-1.jpg",
+      "product_image": "https://cdn.thewirecutter.com/wp-content/media/2023/11/fitness-tracker-2048px-5344.jpg?auto=webp&quality=75&crop=1.91:1&width=1200",
       "category": "Wearables",
       "price": 55,
       "description": "Lightweight fitness band with step counting and heart rate monitoring.",
@@ -190,7 +189,7 @@
     {
       "id": 15,
       "title": "Smartphone Max Pro",
-      "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/iPhone-15-Plus-(2)-(5)-1544.jpg",
+      "product_image": "https://bsmedia.business-standard.com/_media/bs/img/article/2023-10/02/full/1696225756-5527.jpg",
       "category": "Smartphones",
       "price": 999,
       "description": "Flagship smartphone with advanced camera system and large storage.",
@@ -207,7 +206,7 @@
     {
       "id": 16,
       "title": "Smartwatch Fit",
-      "product_image": "https://ryans.com/storage/products/main/huawei-watch-fit-3-amoled-display-gold-white-11722151250.webp",
+      "product_image": "https://imageio.forbes.com/specials-images/imageserve/664ac72bd52a74eeec5c9274/Huawei-Watch-Fit-3/1960x0.jpg?format=jpg&width=960",
       "category": "Wearables",
       "price": 199,
       "description": "Stylish smartwatch with fitness tracking and notifications.",
@@ -223,7 +222,7 @@
     {
       "id": 17,
       "title": "VR Headset Pro",
-      "product_image": "https://www.startech.com.bd/image/cache/catalog/vr-set/meta/quest-pro/quest-pro-04-500x500.webp",
+      "product_image": "https://twinreality.in/wp-content/uploads/2024/08/apple-vision-pro-features.jpg",
       "category": "Home Entertainment",
       "price": 349,
       "description": "Immersive virtual reality headset with a wide field of view and high resolution.",
@@ -240,7 +239,7 @@
     {
       "id": 18,
       "title": "Smart Projector Mini",
-      "product_image": "https://www.pchouse.com.bd/image/cache/catalog/mistake%20product/107/aun%20projector%20pchouse%20bd-600x500h.jpg.webp",
+      "product_image": "https://gadgetviper.com/blog/wp-content/uploads/2016/05/coochee-mini-led-projector-review.jpg",
       "category": "Home Entertainment",
       "price": 299,
       "description": "Compact smart projector for home entertainment with Wi-Fi connectivity.",
@@ -256,7 +255,7 @@
     {
       "id": 19,
       "title": "Smart Doorbell Camera",
-      "product_image": "https://cdn.thewirecutter.com/wp-content/media/2023/09/smart-doorbell-camera-2048px-0033.jpg",
+      "product_image": "https://nexxt-connectivity-frontend.s3.amazonaws.com/media/img/nhc-d100_bn_ca_02_eng.jpg",
       "category": "Home Entertainment",
       "price": 199,
       "description": "Smart doorbell camera with HD video and two-way audio.",
@@ -272,7 +271,7 @@
     {
       "id": 20,
       "title": "Wireless Charging Pad",
-      "product_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT18j-uDXHhFI8-MUnU8kKYCgsScR6NDtYHFw&s",
+      "product_image": "https://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/iS0AAOSwo~lgHk~e/$_12.JPG?set_id=880000500F",
       "category": "Accessories",
       "price": 65,
       "description": "Fast wireless charging pad compatible with all Qi-enabled devices.",
@@ -288,7 +287,7 @@
     {
       "id": 21,
       "title": "Bluetooth Tracking Tag",
-      "product_image": "https://shop.letstrack.in/cdn/shop/products/1_d708782c-2143-448e-922c-b51b3bee9fcd.jpg?v=1691565342&width=1080",
+      "product_image": "https://cdn.thewirecutter.com/wp-content/media/2021/11/bluetoothtracker-2048px-3280.jpg?auto=webp&quality=75&width=1024",
       "category": "Accessories",
       "price": 60,
       "description": "Bluetooth tracking tag to help you locate your belongings.",

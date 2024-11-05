@@ -1,63 +1,57 @@
 [
-    {
+  {
       "id": 1,
-      "store_name": "Tech Hub",
-      "location": "Dhaka, Bangladesh",
-      "image": "https://www.tweedcity.com.au/contentassets/dea5fa6aa40c4583ae440dddbd111dba/ptc-tech-hub.jpg?width=300&height=400&upscale=false&mode=max&quality=80"
-    },
-    {
+      "store_name": "Samsung",
+      "location": "Seoul, South Korea",
+      "image": "https://www.megabites.com.ph/wp-content/uploads/2018/07/Samsung.jpg"
+  },
+  {
       "id": 2,
-      "store_name": "Gadget Galaxy",
-      "location": "Chittagong, Bangladesh",
-      "image": "https://www.suteramall.com/data/merc/masthead/1645502458_272125344_142327954912473_4121783020854725902_n.jpg"
-    },
-    {
+      "store_name": "Apple",
+      "location": "Cupertino, California, USA",
+      "image": "https://miro.medium.com/v2/resize:fit:1400/0*eCevtSq-UNZ8lNHX"
+  },
+  {
       "id": 3,
-      "store_name": "Electro Mart",
-      "location": "Sylhet, Bangladesh",
-      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/0c859c206934213.Y3JvcCwxMjgyLDEwMDMsMTg3LDE5Mw.png"
-    },
-    {
+      "store_name": "Sony",
+      "location": "Tokyo, Japan",
+      "image": "https://www.sony.com/en/brand/images/main-pic-BrandBanner.png"
+  },
+  {
       "id": 4,
-      "store_name": "Digital World",
-      "location": "Khulna, Bangladesh",
-      "image": "https://www.centralsquareballarat.com.au/wp-content/uploads/2018/11/Digital-World-image-for-website.jpg"
-    },
-    {
+      "store_name": "LG",
+      "location": "Seoul, South Korea",
+      "image": "https://etimg.etb2bimg.com/photo/112823655.cms"
+  },
+  {
       "id": 5,
-      "store_name": "Gizmo Stop",
-      "location": "Rajshahi, Bangladesh",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgHozcngYG6sdd4nxuOzeAjolBqIummnYQzg&s"
-    },
-    {
+      "store_name": "Panasonic",
+      "location": "Osaka, Japan",
+      "image": "https://zodiaclightwaves.com/wp-content/uploads/2021/03/Panasonic.jpg"
+  },
+  {
       "id": 6,
-      "store_name": "Device Depot",
-      "location": "Barisal, Bangladesh",
-      "image": "https://s3-media0.fl.yelpcdn.com/bphoto/kiRtJuRd81Rk7I7VvTFlMw/348s.jpg"
-    },
-    {
+      "store_name": "Philips",
+      "location": "Amsterdam, Netherlands",
+      "image": "https://image.cnbcfm.com/api/v1/image/107185637-1675060756198-gettyimages-1234848959-zawrzel-philipso210729_np2E8.jpeg?v=1706519136"
+  },
+  {
       "id": 7,
-      "store_name": "Mobile Mansion",
-      "location": "Narayanganj, Bangladesh",
-      "image": "https://i.ytimg.com/vi/1v3WcOPUO0M/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAQS3d5ZkVGTFt-rTijd-3uyu7e8A"
-    },
-    {
+      "store_name": "Huawei",
+      "location": "Shenzhen, China",
+      "image": "https://www.huaweicentral.com/wp-content/uploads/2019/04/huawei-logo.jpg"
+  },
+  {
       "id": 8,
-      "store_name": "Gadget Zone",
-      "location": "Brahmanbaria, Bangladesh",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzEsaP7o20HDVaomH2NNp0dMnbZtNZVtYxNA&s"
-    },
-    {
+      "store_name": "OnePlus",
+      "location": "Shenzhen, China",
+      "image": "https://www.oneplus.com/content/dam/oasis/page/brand/brand-page/explore/pc/community/C5.jpg"
+  },
+  {
       "id": 9,
-      "store_name": "Tech Nest",
-      "location": "Comilla, Bangladesh",
-      "image": "https://content.jdmagicbox.com/comp/chandigarh/u7/0172px172.x172.190608125634.a2u7/catalogue/shivaay-technest-mohali-sas-nagar-mohali-second-hand-laptop-dealers-71vpk5zdey.jpg"
-    },
-    {
-      "id": 10,
-      "store_name": "Smart Solutions",
-      "location": "Mymensingh, Bangladesh",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzybcvQ04HZVIE5ooOnEzRWWjhWjVrzlOWWg&s"
-    }
-  ]
+      "store_name": "Dell",
+      "location": "Round Rock, Texas, USA",
+      "image": "https://i.ytimg.com/vi/eMJ9mDSSOh0/hqdefault.jpg"
+  }
   
+]

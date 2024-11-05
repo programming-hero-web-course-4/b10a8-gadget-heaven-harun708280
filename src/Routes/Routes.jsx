@@ -28,7 +28,7 @@ import Error from "../Component/Common/Error";
                     loader:()=>fetch(`../product.json`),
                 },
                 {
-                    path:'/category/:name',
+                    path:'/:name',
                     element:<Product></Product>,
                     loader:()=>fetch(`../product.json`),
                 }

@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { wishListContext } from '../../Layout/LayOut';
-
+import { toast } from 'react-hot-toast';
 const WishListDashBoard = () => {
     const [wishList,setWishList]=useContext(wishListContext)
     const handleWishListRemove=(id)=>{
         const filterData=wishList.filter(item=>item.id!==id)
         setWishList(filterData)
+        toast.success('Successfully Delate', { position: 'top-center' });
     }
     return (
         <div>

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { cardContext,  } from '../../Layout/LayOut';
-
+import { toast } from 'react-hot-toast';
 const CartDashBoard = () => {
     const [card,setCard]=useContext(cardContext)
     
@@ -8,6 +8,8 @@ const CartDashBoard = () => {
    const handleCardRemove=(id)=>{
      const filterData=[...card].filter(item=>item.id!==id)
      setCard(filterData)
+     toast.success('Successfully Delate ', { position: 'top-center' });
+
      
    }
 

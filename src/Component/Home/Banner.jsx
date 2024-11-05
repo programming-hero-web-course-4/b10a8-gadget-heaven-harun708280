@@ -9,7 +9,7 @@ const Banner = () => {
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
             </h1>
             <p className='text-white text-center mx-auto w-9/12'>Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-            <button className='bg-white py-2 px-4 rounded-xl'>Shoo Now</button>
+            <button className='bg-white py-2 px-4 rounded-xl'>Shop Now</button>
             
 
            </div>

@@ -46,10 +46,18 @@ const Nav = () => {
                 </div>
                 <div className="navbar-center  hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-12 text-white px-1">
-                        <NavLink to='/'>Home</NavLink>
-                        <NavLink to='/about'>About</NavLink>
-                        <NavLink to='Statistics'>Statistics</NavLink>
-                        <NavLink to='/dashboard'>Dashboard</NavLink>
+                        <NavLink to='/' className={({isActive})=>[
+                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        ]} >Home</NavLink>
+                        <NavLink to='/about' className={({isActive})=>[
+                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        ]} >About</NavLink>
+                        <NavLink to='Statistics' className={({isActive})=>[
+                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        ]} >Statistics</NavLink>
+                        <NavLink to='/dashboard' className={({isActive})=>[
+                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        ]} >Dashboard</NavLink>
 
 
                     
@@ -106,10 +114,18 @@ const Nav = () => {
                 </div>
                 <div className="navbar-center  hidden lg:flex">
                     <ul className="menu menu-horizontal space-x-12  px-1">
-                        <NavLink to='/'>Home</NavLink>
-                        <NavLink to='/about'>About</NavLink>
-                        <NavLink to='Statistics'>Statistics </NavLink>
-                        <NavLink to='/dashboard'>Dashboard</NavLink>
+                        <NavLink to='/' className={({isActive})=>[
+                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        ]}>Home</NavLink>
+                        <NavLink to='/about' className={({isActive})=>[
+                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        ]}>About</NavLink>
+                        <NavLink to='Statistics' className={({isActive})=>[
+                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        ]}>Statistics </NavLink>
+                        <NavLink to='/dashboard' className={({isActive})=>[
+                            isActive?'border-b-4 border-red-600':'hover:border-b-2 hover:border-red-600'
+                        ]}>Dashboard</NavLink>
 
                     
                     </ul>

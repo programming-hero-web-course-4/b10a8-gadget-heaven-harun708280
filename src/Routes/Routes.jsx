@@ -9,11 +9,13 @@ import ProductDetails from "../Component/ProductDetails/ProductDetails";
 import Dashboard from "../Component/Dashboard/Dashboard";
 import Statistics from "../Component/Statistics/Statistics";
 import About from "../Component/About/About";
+import Error from "../Component/Common/Error";
 
   const router = createBrowserRouter([
     {
       path: "/",
       element: <LayOut></LayOut>,
+      errorElement:<Error></Error>,
       children:[
         {
             path:'/',
@@ -52,7 +54,7 @@ import About from "../Component/About/About";
         {
           path:'/about',
           element:<About></About>,
-          loader:()=>fetch(`Store.json`)
+          loader:()=>fetch(`../Store.json`)
         }
       ]
     },

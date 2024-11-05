@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 import Nav from '../Component/Common/Nav';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigation } from 'react-router-dom';
 import Footer from '../Component/Common/Footer';
 import { ToastContainer, toast } from 'react-toastify';
 
@@ -8,10 +8,12 @@ import 'react-toastify/dist/ReactToastify.css';
 export const cardContext = createContext(null);
 export const walletContext=createContext(null);
 export const wishListContext=createContext(null)
+import { Audio } from 'react-loader-spinner'
 const LayOut = () => {
     const [card, setCard] = useState([]);
     const [wallet,setWallet]=useState(0);
     const [wishList,setWishList]=useState([])
+    const navigation=useNavigation()
     return (
         <wishListContext.Provider value={[wishList,setWishList]}>
          <walletContext.Provider value={[wallet,setWallet]}>

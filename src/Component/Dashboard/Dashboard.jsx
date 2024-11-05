@@ -83,7 +83,7 @@ const Dashboard = () => {
                {
                  dash.status==='cart' && 
                  <div className="flex space-x-10 items-center">
-                 <h1>Total cost: {wallet}</h1>
+                 <h1>Total cost:{wallet}</h1>
                  <div className="space-x-4">
 
                  <button onClick={handlePriceSort} className='border-common border text-common rounded-full py-1 px-7' type="button">Sort by Price</button>

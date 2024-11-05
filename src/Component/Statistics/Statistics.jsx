@@ -40,7 +40,7 @@ const Statistics = () => {
                 </div>
             </div>
             <div className="flex justify-center">
-                <ResponsiveContainer  height={600}>
+                <ResponsiveContainer  height={500}>
                     <ComposedChart
                         data={data}
                         margin={{

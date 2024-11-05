@@ -3,10 +3,7 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import Card from './Card';
 
 const Product = () => {
-    useEffect (()=>{
-        document.title='Gadget Heaven || product'
-
-    },[])
+    
     const loadProduct=useLoaderData()
     const {name}=useParams()
     
@@ -23,10 +20,16 @@ const Product = () => {
     },[loadProduct])
     
     return (
-        <div className='grid grid-cols-3 gap-5'>
+        <div className="">
             {
-                products.map(product=><Card key={product.id} product={product} ></Card>)
+                products.length<1?<h1 className='text-center text-6xl h-[320px] flex justify-center items-center'> Not  Product Found <span><i class="fa-solid fa-ban"></i></span></h1>:
+                <div className='grid grid-cols-3 gap-5'>
+                {
+                    products.map(product=><Card key={product.id} product={product} ></Card>)
+                }   
+                </div>
             }
+                
         </div>
     );
 };

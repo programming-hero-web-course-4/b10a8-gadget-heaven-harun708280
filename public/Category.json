@@ -33,6 +33,11 @@
       "id": 7,
       "category": "Accessories",
       "slug": "accessories"
+    },
+    {
+      "id": 8,
+      "category": "Other",
+      "slug": "accessories"
     }
   ]
   

@@ -92,9 +92,9 @@ const Dashboard = () => {
                  <h1>Total cost: {price} </h1>
                  <div className="space-x-4">
 
-                    <button disabled={card.length < 1} onClick={handlePriceSort} className={`border-common border rounded-full py-1 px-7  ${card.length < 1 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'text-common'}`}> Sort by Price</button>
+                    <button disabled={card.length < 1} onClick={handlePriceSort} className={`border-common border rounded-full py-1 px-7  ${card.length < 1 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'text-common'}`}> Sort by Price <span><i class="fa-solid fa-sort"></i></span></button>
 
-                    <button disabled={card.length < 1} onClick={handlePurchase} className={`border-white border rounded-full py-1 px-7  ${card.length < 1 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'text-white bg-common'}`} >Purchase</button>
+                    <button disabled={card.length < 1} onClick={handlePurchase} className={`border-white border rounded-full py-1 px-7  ${card.length < 1 ? 'bg-gray-300 text-gray-500 cursor-not-allowed' : 'text-white bg-common'}`} >Purchase <span><i class="fa-solid fa-bag-shopping"></i></span></button>
 
                  </div>
 

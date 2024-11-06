@@ -22,7 +22,7 @@ const Home = () => {
             </div>
             <h1 className='text-center text-3xl font-bold my-12'>Explore Cutting-Edge Gadgets</h1>
             <div className="w-full flex gap-4 my-12">
-                <div className="w-2/12">
+                <div className="w-2/12 mb-7">
                 <Category key={loadCategory.id} category={loadCategory}></Category>
                 </div>
                 <div className="w-10/12">

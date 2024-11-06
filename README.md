@@ -14,7 +14,7 @@
 - Context API: You’re using Context API to handle card and wishList states, which provides a clean way to access these states globally without prop drilling.
 - Local Storage (if used): Persisting certain data across sessions to retain user preferences or selections.
 
-# 5 Key Features of Your Project:
+# 5 Key Features of  Project:
 
 - Product Detail Display: Shows comprehensive details about each product, including price, specifications, and availability.
 - Add to Cart and Wishlist: Allows users to add items to their cart and wishlist, with notifications on the addition and button disablement for already-wishlisted items.

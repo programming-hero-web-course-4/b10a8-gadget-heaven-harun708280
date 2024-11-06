@@ -83,7 +83,7 @@ const ProductDetails = () => {
                 <div className="bg-white w-10/12 shadow-xl mx-auto rounded-lg top-2/3 left-1/2 transform -translate-x-1/2 absolute">
                     <div className="flex items-center gap-10 p-5">
                         <div className="rounded-lg">
-                            <img className='h-[500px] rounded-lg' src={product_image} alt={title} />
+                            <img className='h-[500px] w-[600px] rounded-lg' src={product_image} alt={title} />
                         </div>
                         <div className='space-y-6'>
                             <h1 className='text-2xl font-bold'>{title}</h1>
